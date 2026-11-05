@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h3>MY WEB PORTFOLIO</h3>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#others">others</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><button id="theme-toggle" type="button">Dark Mode</button></li>
+            </li>
+        </ul>
+    </nav> 
+
+    <div class="profile-card">
+        <h1>HOME</h1>
+        <img src="profile.jpg" alt="fetalbo" class="profile-img">
+        <h1>! Hello Im Kim Patrick Fetalbo </h1>
+        <p>I’m a second-year BSIT student who enjoys programming and software development. I’m learning something new every day, and I want to build useful software.</p>
+    </div> 
+        
+        
+<div class="hobbies-box">
+  <h1 id="others">My Hobbies</h1>
+
+  <div class="hobbies">
+    <div class="hobby">
+      <div class="info">
+        <h3>Listening to music</h3>
+        <p>listen to favorite music</p>
+      </div>
+    </div>
+
+    <div class="hobby">
+      <div class="info">
+        <h3>Cycling</h3>
+        <p>Comfort zone</p>
+      </div>
+    </div>
+
+    <div class="hobby">
+      <div class="info">
+        <h3>Gaming</h3>
+        <p>Self entertainment</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="projects-box">
+  <h1 id="projects">My Projects</h1>
+
+  <div class="project">
+    <h3>MY PERSONAL PORTFOLIO</h3>
+    <p>My personal portfolio built with HTML and CSS</p>
+    <img src="project.png" alt="">
+  </div>
+</div>
+
+
+
+
+           
+<div class="Skills">
+    <h1 id="about">Skills</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Problem-Solving Skills</h3>
+            <p>Improving logical thinking and analytical skills by identifying problems, understanding possible solutions, and applying programming techniques to create effective and practical solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Database Management</h3>
+            <p>Learning how databases help maintain accurate and organized records.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Troubleshooting</h3>
+            <p>Basic computer Troubleshooting</p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX DESIGN</h3>
+            <p>Exploring the principles of user interface and user experience design by creating simple, attractive, and easy-to-navigate website layouts that provide a better experience for users.</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="Education">
+    <h1>Education</h1>
+</div>
+</div>
+
+<div class="slider">
+  <div class="track" id="track">
+
+    <div class="slide">
+      <img src="elementary.png" alt="">
+      <div class="overlay">
+        <h2>Manuel Luis Quezon<br>Elementary</h2>
+        <p>Grade 1-6</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="cstc.png" alt="">
+      <div class="overlay">
+        <h2>College of Sciences, Technologies and Communication Inc.<br>Senior High</h2>
+        <p>information Communication Technology<br>2023-2024</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="cstc.png" alt="">
+      <div class="overlay">
+        <h2>College of Sciences, Technologies and Communication Inc.<br>College</h2>
+        <p>Information and Technology <br>2026-2027</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="buttons">
+  <button onclick="document.getElementById('track').style.transform = 'translateX(0%)'">1</button>
+  <button onclick="document.getElementById('track').style.transform = 'translateX(-100%)'">2</button>
+  <button onclick="document.getElementById('track').style.transform = 'translateX(-200%)'">3</button>
+</div>
+
+
+<div class="awards">
+    <h1>My Awards</h1>
+    <h1>Certificate of Recognition</h1>
+    <img src="diploma.jpg" alt="Certificate of Recognition" class="rotate-left">
+</div>
+
+</div>
+<footer id="contact">
+  <h2>MY CONTACT</h2>
+  <p>Email: <a href="mailto:kimpatrick792@email.com">kimpatrick792@email.com</a></p>
+  <p>Facebook: <a href="https://facebook.com/yourname" target="_blank">facebook.com/Kim Patrick Fetalbo</a></p>
+  <p class="copyrightto">© 2026 Kim Patrick Fetalbo</p>
+  
+</footer>
+<script>
+  const btn = document.getElementById('theme-toggle');
+
+  btn.addEventListener('click', () => {
+    const dark = document.body.classList.toggle('dark');
+    btn.textContent = dark ? 'Light Mode' : 'Dark Mode';
+  });
+</script>
+</body>
+</html>
